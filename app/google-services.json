@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211425003553",
+    "project_id": "saferesidenceapp",
+    "storage_bucket": "saferesidenceapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211425003553:android:214a3270a558cbaa6e3b60",
+        "android_client_info": {
+          "package_name": "com.sena.saferesidenceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-tT7S2Dzu91yImdXz9TOJmbRzB_l2Iq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

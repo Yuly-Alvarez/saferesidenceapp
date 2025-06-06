@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">saferesidenceapp</string>
+    <string-array name="user_types">
+        <item>Administrador</item>
+        <item>Residente</item>
+        <item>Vigilante</item>
+        <item>Visitante</item>
+    </string-array>
+</resources>
