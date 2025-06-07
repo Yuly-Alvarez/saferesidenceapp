@@ -1,10 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    android:padding="20dp"
+    android:background="@drawable/fondo"
+    tools:context=".Dashboard"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="201dp"
+        android:layout_height="133dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/create_user_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Crear usuario"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="35dp"/>
+
+    <Button
+        android:id="@+id/list_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Consultar usuarios"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/list_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Consultar ingresos y salidas"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Cerrar sesión"
+        android:layout_marginTop="25dp"/>
+</LinearLayout>
