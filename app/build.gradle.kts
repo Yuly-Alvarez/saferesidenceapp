@@ -40,6 +40,8 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
     implementation("com.google.firebase:firebase-database:20.3.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.annotation:annotation:1.7.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

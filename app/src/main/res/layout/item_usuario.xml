@@ -13,7 +13,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/email_text"
+        android:id="@+id/dni_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/dni_text"
+        android:id="@+id/email_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

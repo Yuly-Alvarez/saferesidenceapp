@@ -7,9 +7,11 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Dashboard extends AppCompatActivity {
 
-    Button createUserFormButton, listUserButton;
+    Button createUserFormButton, listUserButton, logoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,22 +20,30 @@ public class Dashboard extends AppCompatActivity {
 
         createUserFormButton = findViewById(R.id.create_user_form);
         listUserButton = findViewById(R.id.list_user);
+        logoutButton = findViewById(R.id.log_out);
 
-        // Ir al formulario de registro
         createUserFormButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, RegisterPage.class);
-                startActivity(intent);
+                startActivity(new Intent(Dashboard.this, RegisterPage.class));
             }
         });
 
-        // Ir a la lista de usuarios
         listUserButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, UserListActivity.class);
+                startActivity(new Intent(Dashboard.this, UserListActivity.class));
+            }
+        });
+
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(Dashboard.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
+                finish();
             }
         });
     }
